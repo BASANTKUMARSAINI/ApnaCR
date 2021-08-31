@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="42dp"
+        android:background="@drawable/dialog_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="New Test"
+
+            android:textColor="@android:color/white"
+            android:background="@drawable/round_background"
+            android:textAppearance="?android:textAppearanceLarge"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            tools:layout_editor_absoluteX="30dp">
+
+            <TextView
+                android:id="@+id/et_select_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hollow_background"
+                android:hint="Select Pdf File(Optional)"
+                android:inputType="text"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/et_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/hollow_background"
+                android:hint="Topic..."
+                android:gravity="top"
+                android:inputType="text"
+                android:padding="5dp"
+                android:minHeight="100dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/hollow_background"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Date"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:background="@drawable/hollow_background"
+                android:gravity="center"
+                android:hint="Time"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_marks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/hollow_background"
+            android:gravity="center"
+            android:hint="Max marks"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+        <Button
+            android:id="@+id/btn_upload_assignment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="Upload"
+            android:layout_margin="50dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="50dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/Dialog_close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/remove" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

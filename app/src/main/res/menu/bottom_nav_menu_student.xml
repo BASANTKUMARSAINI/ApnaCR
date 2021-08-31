@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_student_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+
+
+    <item
+        android:id="@+id/navigation_student_classroom"
+        android:icon="@drawable/ic_class"
+        android:title="Logout" />
+    <item
+        android:id="@+id/navigation_student_stream"
+        android:icon="@drawable/ic_stream"
+        android:title="Setting" />
+
+</menu>
